@@ -1,0 +1,28 @@
+{
+  "name": "cv-markdown",
+  "version": "1.0.0",
+  "description": "Markdown for Curvature.",
+  "author": "Sean Morris",
+  "license": "Apache 2.0",
+  "scripts": {
+    "build": "babel .source --presets babel-preset-es2015 --out-dir ."
+  },
+  "keywords": [
+    "markdown",
+    "curvature"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "codeflask": "^1.1.0",
+    "curvature": "0.0.6",
+    "highlightjs": "^9.12.0",
+    "markdown-it": "^8.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanmorris/cv-markdown.git"
+  }
+}
