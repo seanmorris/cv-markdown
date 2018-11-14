@@ -148,7 +148,8 @@ export class View extends BaseView
 			// let replace = '!!!';
 			let replace = match[0];
 
-			let splitMatch = match[1].split(/(?:(?:\\\\)+?):|(?<!\\):/);
+			// let splitMatch = match[1].split(/(?:(?:\\\\)+?):|(?<!\\):/);
+			let splitMatch = match[1].split(/\:/);
 
 			console.log(splitMatch);
 
@@ -198,7 +199,7 @@ export class View extends BaseView
 
 	getComponent(componentId)
 	{
-		return `[ !!! ${componentId} !!! ]`;
+		// return `[ !!! ${componentId} !!! ]`;
 		// this.args[componentId] = 1;
 
 		let [className, placeholder] = componentId.split(':');

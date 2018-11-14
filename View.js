@@ -189,7 +189,7 @@ var View = exports.View = function (_BaseView) {
 	}, {
 		key: 'getComponent',
 		value: function getComponent(componentId) {
-			return '[ !!! ' + componentId + ' !!! ]';
+			// return `[ !!! ${componentId} !!! ]`;
 			// this.args[componentId] = 1;
 
 			var _componentId$split = componentId.split(':'),
