@@ -72,7 +72,7 @@ export class View extends BaseView
 
 			if(idx == 0)
 			{
-				return `<div class="hero" style = "background-image:url(${src})"></div>`;
+				// return `<span class="hero" style = "background-image:url(${src})"></span>`;
 			}
 
 			return `<img src = "${src}" alt = "${alt}" />`;
