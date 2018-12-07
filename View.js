@@ -77,6 +77,8 @@ var View = exports.View = function (_BaseView) {
 				// return `<span class="hero" style = "background-image:url(${src})"></span>`;
 			}
 
+			_this.args.images.push(src);
+
 			return '<img src = "' + src + '" alt = "' + alt + '" />';
 		};
 
@@ -134,6 +136,7 @@ var View = exports.View = function (_BaseView) {
 	_createClass(View, [{
 		key: 'renderMarkdown',
 		value: function renderMarkdown(source) {
+			this.args.images = [];
 			this.headingMenu = { children: [], level: 0 };
 			this.currentLevel = this.headingMenu;
 

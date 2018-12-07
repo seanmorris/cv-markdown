@@ -75,6 +75,8 @@ export class View extends BaseView
 				// return `<span class="hero" style = "background-image:url(${src})"></span>`;
 			}
 
+			this.args.images.push(src);
+
 			return `<img src = "${src}" alt = "${alt}" />`;
 		};
 
@@ -136,6 +138,7 @@ export class View extends BaseView
 
 	renderMarkdown(source)
 	{
+		this.args.images  = [];
 		this.headingMenu  = {children: [], level: 0};
 		this.currentLevel = this.headingMenu;
 		
